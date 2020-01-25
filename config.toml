@@ -4,7 +4,7 @@ pluralizeListTitles = false
 
 title = "Flum.dev"
 
-theme= "flum.dev"
+theme= "flum-hugo"
 
 [menu]
   [[menu.main]]
