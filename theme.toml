@@ -1,0 +1,10 @@
+# theme.toml template for a Hugo theme
+
+name = "flum"
+license = "MIT"
+licenselink = "https://github.com/ilknarf/flum.dev/blob/master/LICENSE"
+description = "a custom Hugo blog, based in bulma with a functional navbar"
+homepage = "http://flum.dev/"
+tags = ["bulma"]
+features = ["navbar", "bulma", "custom"]
+min_version = "0.41"

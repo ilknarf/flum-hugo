@@ -1,0 +1,18 @@
+<!doctype html>
+
+<html lang="en">
+    {{ partial "head.html" .}}
+  <body class="has-fixed-navbar-top">
+    <section class="section">
+        {{ partial "nav.html" . }}
+    </section>
+    <section class="section">
+        <div class="container">
+            <main class="main">
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+    </section>
+    {{ partial "footer.html" (dict "email" .Site.Params.email)}}
+  </body>
+</html>
