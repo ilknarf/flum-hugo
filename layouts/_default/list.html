@@ -13,6 +13,9 @@
     {{ if or (.Param $taxo) (.Summary) }}
     <div class="card-content">
     <div class="content">
+      {{if .Date}}
+      <p>{{ .Date.Format "January 2, 2006" }}</p>
+      {{end}}
     {{ if .Param $taxo }}
         {{ range .Param $taxo }}
             {{ $name := . }}

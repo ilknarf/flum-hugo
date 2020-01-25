@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 <h1 class="title">{{ .Title }}</h1>
-
+{{if .Date }}
+<h1 class="subtitle">{{ .Date.Format "January 2, 2006" }}</h1>
+{{ end }}
 <div class="content">
     {{ .Content }}
 </div>
