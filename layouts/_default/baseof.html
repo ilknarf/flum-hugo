@@ -1,16 +1,27 @@
 <!doctype html>
 
+<style>
+  body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  #body {
+    flex: 1;
+  }
+
+</style>
+
 <html lang="en">
     {{ partial "head.html" .}}
   <body class="has-fixed-navbar-top">
     <section class="section">
         {{ partial "nav.html" . }}
     </section>
-    <section class="section">
+    <section class="section" id="body">
         <div class="container">
-            <main class="main">
                 {{ block "main" . }}{{ end }}
-            </main>
         </div>
     </section>
     {{ partial "footer.html" (dict "email" .Site.Params.email)}}
